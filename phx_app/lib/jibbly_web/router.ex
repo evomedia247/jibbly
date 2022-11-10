@@ -18,6 +18,7 @@ defmodule JibblyWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    live "/cats", CatsListLive
   end
 
   # Other scopes may use custom stacks.
