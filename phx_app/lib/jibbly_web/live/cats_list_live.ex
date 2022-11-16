@@ -1,11 +1,11 @@
-defmodule LvnTutorialWeb.CatsListLive do
-  use LvnTutorialWeb, :live_view
+defmodule JibblyWeb.CatsListLive do
+  use JibblyWeb, :live_view
   require EEx
 
   EEx.function_from_file(
     :def,
     :render,
-    "lib/lvn_tutorial_web/live/cats_list_live.ios.heex",
+    "lib/jibbly_web/live/cats_list_live.ios.heex",
     [:assigns],
     engine: Phoenix.LiveView.HTMLEngine
   )
